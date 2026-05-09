@@ -1,6 +1,6 @@
 import gradio as gr
-from model import Summarizer
-from extractor import TranscriptExtractor
+from summary_model import Summarizer
+from transcript_model import TranscriptExtractor
 
 print("Initializing summarizer model...")
 summarizer = Summarizer()
@@ -40,7 +40,7 @@ def process_video(url, max_length, min_length):
 with gr.Blocks(title="YouTube Video Summarizer (Custom AI)") as demo:
     gr.Markdown("# 📺 YouTube Video Summarizer")
     gr.Markdown(
-        "This app uses a local Whisper model to transcribe YouTube videos and a custom open-source AI model (`facebook/bart-base`) to summarize the transcript."
+        "This app uses a fine-tuned Whisper model to transcribe YouTube videos and a fine-tuned model BART-base to summarize the transcript."
     )
 
     with gr.Row():

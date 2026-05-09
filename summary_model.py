@@ -43,9 +43,3 @@ class Summarizer:
                 print(f"Error summarizing chunk: {e}")
 
         return summary_text.strip()
-
-
-if __name__ == "__main__":
-    summarizer = Summarizer()
-    text = "This is a very long text that needs to be summarized. " * 50
-    print("Summary:", summarizer.summarize(text))

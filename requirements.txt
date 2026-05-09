@@ -11,3 +11,5 @@ rouge_score
 absl-py
 nltk 
 accelerate
+soundfile 
+peft
