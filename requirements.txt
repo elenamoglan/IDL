@@ -4,3 +4,10 @@ gradio
 yt-dlp
 openai-whisper
 ffmpeg-python
+datasets 
+numpy
+evaluate 
+rouge_score 
+absl-py
+nltk 
+accelerate
