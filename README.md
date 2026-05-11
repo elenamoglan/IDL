@@ -1,10 +1,11 @@
 # YouTube Video Summarizer
 
-This application transcribes YouTube videos by extracting their audio and passing it through a fine-tuned Whisper AI model. The resulting text is then summarized using a custom, fine-tuned AI model BART-Base. It uses Gradio for a simple, interactive user interface.
+This application transcribes YouTube videos by extracting their audio and passing it through a fine-tuned Distil-Whisper AI model. The resulting text is then summarized using a custom, fine-tuned AI model BART-Base. It uses Gradio for a simple, interactive user interface.
 
 ## Installation
 
 1. Create a virtual environment (optional but recommended):
+
    ```bash
    python -m venv venv
    source venv/bin/activate
